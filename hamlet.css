@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+		font-family:Arial, Helvetica, sans-serif; 
+		background-color:#CC9;
+	}
+
+	
+	/*style for the quote, because quote is centered if I just use the quote element*/
+	.indent {
+		font-family:Arial, Helvetica, sans-serif;
+		margin-left:40px;
+	}
+	/*outer div that houses "tulane"*/
+	.wrapper {
+		width: 100%;
+		max-width:1000px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:20px;
+		margin-top:20px;
+		padding:10px;
+	}
+	
+	
+	.begin {
+		width:100%;
+		max-width:1000px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:20px;
+		margin-bottom:20px;
+		padding:10px;
+	}
+	/*inner div inside of "wrapper"*/
+	.tulane {
+		width: 100%;
+		max-width: 800px;
+		padding:20px;
+		border:10px solid #030;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+/*style for the para which used to be a heading the but link styles didn't work*/
+	 .macaroni {
+		  font-size:20px;
+		  line-height:30px;
+		  color:#330;
+		  margin-bottom:18px;
+	  }
+		
+		
+	nav {
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:24px;
+		font-color:#330;
+		margin-bottom:10px;
+		text-align: center;
+	}
+	
+	nav ul {
+		list-style-type:none;
+		margin:0;
+		padding:0px;
+	}
+	
+	nav li {
+		display: inline;
+		font-size: 20px;
+	}
+	.button {
+		padding: 10px;
+	}
+	
+	a:link {
+		color:#339;
+		text-decoration: none;
+	}
+	
+	a:visited {
+		color:#06F;
+	}
+	
+	a:hover {
+		color:#930;
+	}
+	
+	a:active {
+		color:#0F0;
+	}
+	
+		
+	img {
+		width: 100%;
+		max-width: 570px;
+		
+	}
+
+	.fig-style {
+		text-align: center;
+	}
+	  
+	  h1 {
+		  font-size:32px;
+		  line-height:40px;
+		  margin-bottom:18px;
+	  }
+	  h2, h1, p.heading-style {	
+	  		color:#330;
+	  }
+
+	  h2 {
+	  	font-size: 28px;
+	  	margin-bottom: 20px;
+	  	margin-top:0;
+	  }
+	  p.heading-style {
+	  	font-size: 24px;
+	  	text-transform: uppercase;
+	  	margin-bottom: 20px;
+	  }
+	  
+	  h3 {
+		 font-size:46px;
+		  line-height:40px;
+		  color:#000;
+		  margin-bottom:30px;
+		  text-align:center;
+	  }
+	  
+	  p {
+		  margin-bottom:20px;
+		 padding-bottom:0px;
+		  padding-top:0px;
+		  padding-left:20px;
+		  padding-right:20px;
+		  
+	  }
+	  .act {
+		  font-size:24px;
+		  line-height:  36px;
+		  color: #330;
+	  }
