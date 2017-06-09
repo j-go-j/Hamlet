@@ -99,10 +99,10 @@ body {
 		
 	}
 
-	.fig-style {
+	h1, h2, .fig-style {
 		text-align: center;
 	}
-	  
+
 	  h1 {
 		  font-size:32px;
 		  line-height:40px;
