@@ -4,13 +4,20 @@
 body {
 		font-family:Arial, Helvetica, sans-serif; 
 		background-color:#CC9;
-	}
+		line-height: 30px;
 
+	}
+figcaption {
+	font-size: 14px;
+	margin-bottom: 5px;
+	line-height: 14px;
+}
 	
 	/*style for the quote, because quote is centered if I just use the quote element*/
 	.indent {
 		font-family:Arial, Helvetica, sans-serif;
 		margin-left:40px;
+		line-height: 20px;
 	}
 	/*outer div that houses "tulane"*/
 	.wrapper {
@@ -21,29 +28,36 @@ body {
 		margin-bottom:20px;
 		margin-top:20px;
 		padding:10px;
+		border: 2px solid black;
 	}
 	
 	
-	.begin {
+	/*.begin {
 		width:100%;
-		max-width:1000px;
+		max-width:1040px;
 		margin-left:auto;
 		margin-right:auto;
 		margin-top:20px;
 		margin-bottom:20px;
-		padding:10px;
+		padding:10px;*/
 	}
-	/*inner div inside of "wrapper"*/
-	.tulane {
+	/* tulane is inner div inside of "wrapper"; history is name of divs on History page*/
+	.tulane, .history {
 		width: 100%;
-		max-width: 800px;
-		padding:20px;
-		border:10px solid #030;
+		max-width: 700px;
 		margin-left: auto;
 		margin-right: auto;
 
 	}
+	.tulane {
+		border: 10px solid #030;
+		padding: 20px;
+	}
+	.history {
+		height: 500px;
+	}
 
+	
 /*style for the para which used to be a heading the but link styles didn't work*/
 	 .macaroni {
 		  font-size:20px;
@@ -52,13 +66,16 @@ body {
 		  margin-bottom:18px;
 	  }
 		
-		
+	nav, nav ul, nav li, p {
+		font-size: 18px;
+	}
+
 	nav {
 		font-family:Verdana, Geneva, sans-serif;
-		font-size:24px;
 		font-color:#330;
 		margin-bottom:10px;
 		text-align: center;
+
 	}
 	
 	nav ul {
@@ -69,10 +86,15 @@ body {
 	
 	nav li {
 		display: inline;
-		font-size: 20px;
+
 	}
+
+	/* adds padding around the nav items--not in use on homepage*/
 	.button {
-		padding: 10px;
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	
 	a:link {
@@ -102,6 +124,7 @@ body {
 	h1, h2, .fig-style {
 		text-align: center;
 	}
+
 
 	  h1 {
 		  font-size:32px;
@@ -144,3 +167,34 @@ body {
 		  line-height:  36px;
 		  color: #330;
 	  }
+
+	  .img-left {
+	  	float: left;
+	  	width: 50%;
+	  	max-width: 285px;
+	  	max-height: 285px;
+	  }
+
+	.img-right {
+		float: right;
+		width: 50%;
+		max-width: 285px;
+		max-height: 285px;
+	}
+
+	/* this class attempts to align vertically the text that appears next to the images.*/
+	.flex-center-vertically {
+		display: inline;
+		justify-content: center;
+		flex-direction: column;
+		height: 400px;
+	}
+
+	/*this class adds space between the flex-center-vertically content*/
+	.blank {
+		height: 30px;
+	}
+
+
+
+
