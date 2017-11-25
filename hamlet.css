@@ -3,10 +3,19 @@
 
 body {
 		font-family:Arial, Helvetica, sans-serif; 
-		background-color:#CC9;
+		background-color:#f2e7c6;
 		line-height: 30px;
-
+		margin: 0;
 	}
+.header {
+		background-image: url("images/indaris_parchment.jpg");
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: 1px solid #f2e4a2;
+	}
+
+
 figcaption {
 	font-size: 14px;
 	margin-bottom: 5px;
@@ -28,8 +37,9 @@ figcaption {
 		margin-bottom:20px;
 		margin-top:20px;
 		padding:10px;
-		border: 2px solid black;
+		/*border: 2px solid black;*/
 	}
+	
 	
 	
 	/*.begin {
@@ -37,9 +47,10 @@ figcaption {
 		max-width:1040px;
 		margin-left:auto;
 		margin-right:auto;
-		margin-top:20px;
+		margin-top:0px;
 		margin-bottom:20px;
-		padding:10px;*/
+		padding:20px;
+	
 	}
 	/* tulane is inner div inside of "wrapper"; history is name of divs on History page*/
 	.tulane, .history {
@@ -54,31 +65,27 @@ figcaption {
 		padding: 20px;
 	}
 	.history {
-		height: 500px;
+		height: 100%;
 	}
 
 	
-/*style for the para which used to be a heading the but link styles didn't work*/
+/*style for the para which used to be a heading the but link styles didn't work
 	 .macaroni {
 		  font-size:20px;
 		  line-height:30px;
 		  color:#330;
 		  margin-bottom:18px;
-	  }
-		
-	nav, nav ul, nav li, p {
-		font-size: 18px;
-	}
+	  }*/
 
-	nav {
+nav, nav ul, nav li {
 		font-family:Verdana, Geneva, sans-serif;
+		font-size: 24px;
 		font-color:#330;
 		margin-bottom:10px;
 		text-align: center;
+}
 
-	}
-	
-	nav ul {
+nav ul {
 		list-style-type:none;
 		margin:0;
 		padding:0px;
@@ -86,7 +93,14 @@ figcaption {
 	
 	nav li {
 		display: inline;
+}
 
+	p {
+		font-size: 18px;
+	}
+		
+p.smaller {
+		font-size: 14px;
 	}
 
 	/* adds padding around the nav items--not in use on homepage*/
@@ -103,7 +117,7 @@ figcaption {
 	}
 	
 	a:visited {
-		color:#06F;
+		color:#6e0d25;
 	}
 	
 	a:hover {
@@ -121,24 +135,28 @@ figcaption {
 		
 	}
 
-	h1, h2, .fig-style {
+	h2, .fig-style {
 		text-align: center;
 	}
 
 
-	  h1 {
-		  font-size:32px;
-		  line-height:40px;
-		  margin-bottom:18px;
+	h1 {
+		  /*font-size:108px;*/
+		  font-size: 700%;
+		  line-height:50px;
+		  padding-left: 50px;
+		  padding-top: 25px;
+		  margin-bottom:0px;
+		  font-family: 'Meddon', cursive;
 	  }
-	  h2, h1, p.heading-style {	
+	  h2, h1, h4, p.heading-style {	
 	  		color:#330;
 	  }
 
-	  h2 {
+	  h2, h4 {
 	  	font-size: 28px;
 	  	margin-bottom: 20px;
-	  	margin-top:0;
+	  	margin-top:20px;
 	  }
 	  p.heading-style {
 	  	font-size: 24px;
@@ -149,10 +167,14 @@ figcaption {
 	  h3 {
 		 font-size:46px;
 		  line-height:40px;
-		  color:#000;
+		  color:#3f3b3b;
 		  margin-bottom:30px;
 		  text-align:center;
 	  }
+	  h4 {
+	  	text-align: left;
+	  }
+
 	  
 	  p {
 		  margin-bottom:20px;
@@ -172,14 +194,14 @@ figcaption {
 	  	float: left;
 	  	width: 50%;
 	  	max-width: 285px;
-	  	max-height: 285px;
+	  	/*max-height: 285px;*/
 	  }
 
 	.img-right {
 		float: right;
 		width: 50%;
 		max-width: 285px;
-		max-height: 285px;
+		/*max-height: 285px;
 	}
 
 	/* this class attempts to align vertically the text that appears next to the images.*/
@@ -187,13 +209,14 @@ figcaption {
 		display: inline;
 		justify-content: center;
 		flex-direction: column;
-		height: 400px;
+		
 	}
 
 	/*this class adds space between the flex-center-vertically content*/
 	.blank {
 		height: 30px;
 	}
+	
 
 
 

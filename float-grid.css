@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-grid {
+  display: flex;
+}
+.col-1{
+  flex: 1;
+  padding: 10px;
+  color:#392f75;
+  font-weight: bold;
+}
+.col-2{
+  flex: 2;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .flex-grid {
+    display: block;
+  }
+
+.flex-grid-halves {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.flex-grid-halves .col-1 {
+  width: 40%;
+}
+.flex-grid-halves .col-2{
+  width: 60%;
+}
